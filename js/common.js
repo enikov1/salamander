@@ -58,6 +58,10 @@ $(document).ready(function () {
 			}
 		},
 
+		autoplay: {
+			delay: 5000,
+		},
+
 		navigation: {
 			nextEl: '#slider_header_next',
 			prevEl: '#slider_header_prev',
@@ -114,6 +118,10 @@ $(document).ready(function () {
   		centeredSlidesBounds: true,
   		spaceBetween: 20,
 
+		autoplay: {
+			delay: 5000,
+		},
+
 		navigation: {
 			nextEl: '.swiper-nav_1 .swiper-button-next',
 			prevEl: '.swiper-nav_1 .swiper-button-prev',
@@ -136,6 +144,10 @@ $(document).ready(function () {
   		centeredSlidesBounds: true,
   		spaceBetween: 20,
 
+		autoplay: {
+			delay: 5000,
+		},
+
 		navigation: {
 			nextEl: '.swiper-nav_2 .swiper-button-next',
 			prevEl: '.swiper-nav_2 .swiper-button-prev',
@@ -148,6 +160,10 @@ $(document).ready(function () {
         centeredSlides: true,
   		centeredSlidesBounds: true,
   		spaceBetween: 20,
+
+		autoplay: {
+			delay: 5000,
+		},
 
 		navigation: {
 			nextEl: '.swiper-nav_3 .swiper-button-next',
@@ -162,6 +178,10 @@ $(document).ready(function () {
   		centeredSlidesBounds: true,
   		spaceBetween: 20,
 
+		autoplay: {
+			delay: 5000,
+		},
+
 		navigation: {
 			nextEl: '.swiper-nav_4 .swiper-button-next',
 			prevEl: '.swiper-nav_4 .swiper-button-prev',
@@ -174,6 +194,10 @@ $(document).ready(function () {
         centeredSlides: true,
   		centeredSlidesBounds: true,
   		spaceBetween: 20,
+
+		autoplay: {
+			delay: 5000,
+		},
 
 		navigation: {
 			nextEl: '.swiper-nav_5 .swiper-button-next',
