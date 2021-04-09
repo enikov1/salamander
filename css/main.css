@@ -4999,6 +4999,7 @@ body {
   overflow-x: hidden;
   -ms-touch-action: none;
       touch-action: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .relative {
