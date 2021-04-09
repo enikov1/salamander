@@ -1559,6 +1559,7 @@ button.swiper-pagination-bullet {
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    padding-bottom: 1.125rem;
   }
   .header_start .swiper-container {
     padding: 0 1.25rem;
@@ -2481,6 +2482,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 767px) {
   .section_work .page {
     overflow-x: auto;
+    overflow-y: hidden;
   }
 }
 
@@ -2863,6 +2865,18 @@ button.swiper-pagination-bullet {
   width: 18.4375rem;
 }
 
+@media (max-width: 767px) {
+  .section_calc-wrap_slider .swiper-slide .field-set input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .section_calc-wrap_slider .swiper-slide .field-set {
+    width: 100%;
+  }
+}
+
 .section_calc-wrap_slider .swiper-container-horizontal > .swiper-pagination-bullets,
 .section_calc-wrap_slider .swiper-pagination-custom,
 .section_calc-wrap_slider .swiper-pagination-fraction {
@@ -2938,6 +2952,12 @@ button.swiper-pagination-bullet {
 
 .section_calc-wrap_slider .slide_wrap label:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 380px) {
+  .section_calc-wrap_slider .slide_wrap .field-checked .text {
+    font-size: 1rem;
+  }
 }
 
 .section_calc-wrap_slider .slide_button {
