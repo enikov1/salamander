@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(window).load(function () {
    
 	// header menu
 	
@@ -277,7 +277,7 @@ $(document).ready(function () {
 			
 		});
 		
-	}, 500);
+	}, 2000);
 
 	
 
@@ -355,7 +355,7 @@ $(document).ready(function () {
 			// effect: 'fade',
 			// loop: true,
 		});
-	}, 500);
+	}, 2000);
 
 	
 
