@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Main</title>
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   </head>
   <body>
     <header class="header">
@@ -14,7 +15,7 @@
           <div class="header_control">
             <div class="header_control-first"><a href="#"><i class="icon-instagram"></i></a></div>
             <div class="header_control-buttons"><a class="button-b-icon action_popup_first" href="#"><i class="icon-phone-call"></i><span>Заказать звонок</span></a><a class="button-b-icon action_popup_last" href="#"><i class="icon-ruler"></i><span>Вызов замерщика</span></a></div>
-            <div class="header_control-list"><a href="tel:89015462773">8 901 5462773</a><a href="tel:84959722773">8 495 9722773</a><a class="smart" href="mail:info@salamanderokno.ru">info@salamanderokno.ru</a></div>
+            <div class="header_control-list"><a href="tel:84959722773">8 495 9722773</a><a href="tel:89015462773">8 901 5462773</a><a class="smart" href="mail:info@salamanderokno.ru">info@salamanderokno.ru</a></div>
             <div class="header_control-last"><a href="mail:info@salamanderokno.ru">info@salamanderokno.ru</a></div>
           </div>
           <div class="header_burger" id="active_smart_menu"><span></span></div>
@@ -36,16 +37,7 @@
                 </ul>
               </div>
             </li>
-            <li><a href="#">Почему мы?</a>
-              <div class="menu-panel"><span>Наши профили</span>
-                <ul>
-                  <li><a href="#">Salamander Design 3D</a></li>
-                  <li><a href="#">Salamander Streamline</a></li>
-                  <li><a href="#">Salamander BlueEvolution</a></li>
-                  <li><a href="#">Salamander Design 2D</a></li>
-                </ul>
-              </div>
-            </li>
+            <li><a href="#link_section_advantages">Почему мы?</a></li>
             <li><a href="#">Услуги</a>
               <div class="menu-panel">
                 <ul>
@@ -56,28 +48,10 @@
                 </ul>
               </div>
             </li>
-            <li><a href="#">Наши работы</a>
-              <div class="menu-panel"><span>Наши профили</span>
-                <ul>
-                  <li><a href="#">Salamander Design 3D</a></li>
-                  <li><a href="#">Salamander Streamline</a></li>
-                  <li><a href="#">Salamander BlueEvolution</a></li>
-                  <li><a href="#">Salamander Design 2D</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Отзывы</a>
-              <div class="menu-panel"><span>Наши профили</span>
-                <ul>
-                  <li><a href="#">Salamander Design 3D</a></li>
-                  <li><a href="#">Salamander Streamline</a></li>
-                  <li><a href="#">Salamander BlueEvolution</a></li>
-                  <li><a href="#">Salamander Design 2D</a></li>
-                </ul>
-              </div>
-            </li>
+            <li><a href="#link_section_work">Наши работы</a></li>
+            <li><a href="#link_section_reviews">Отзывы</a></li>
             <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="/contact.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -194,7 +168,7 @@
             <div class="w-4/12 swiper-slide item-t-50"><a class="item_outer" href="#">
                 <div class="item_outer-image"><img class="lazyload" data-src="./img/section/section_02-05.png" alt=""></div>
                 <div class="item_outer-text">
-                  <h3 class="title text-24">Ломинации </h3>
+                  <h3 class="title text-24">Ламинация </h3>
                 </div></a></div>
             <div class="w-4/12 swiper-slide item-t-50"><a class="item_outer" href="#">
                 <div class="item_outer-image"><img class="lazyload" data-src="./img/section/section_02-06.png" alt=""></div>
@@ -204,7 +178,7 @@
             <div class="w-4/12 swiper-slide item-t-50"><a class="item_outer" href="#">
                 <div class="item_outer-image"><img class="lazyload" data-src="./img/section/section_02-07.png" alt=""></div>
                 <div class="item_outer-text">
-                  <h3 class="title text-24">Покраски</h3>
+                  <h3 class="title text-24">Покраска</h3>
                 </div></a></div>
           </div>
           <div class="slider_nav-smart">
@@ -226,7 +200,7 @@
         <div class="social-section_text">
           <h2 class="text-title">Вызов специалиста на бесплатный замер</h2>
           <div class="control">
-            <p class="descr">Заполните анкету, и мы перезвоним вам в ближайшее время</p><a class="button-white" href="#">Заказать</a>
+            <p class="descr">Заполните анкету, и мы перезвоним Вам в ближайшее время</p><a class="button-white action_popup_last" href="#">Заказать</a>
           </div>
         </div>
         <div class="social-section_right"><img class="lazyload" data-src="./img/section/section_03-01.jpg" alt=""></div>
@@ -234,7 +208,7 @@
     </div>
     <div class="advantages-wrap">
       <div class="container relative">
-        <div class="section-advantages">
+        <div class="section-advantages" id="link_section_advantages">
           <div class="text-center">
             <h2 class="text-title">Наши преимущества</h2>
             <p class="descr">Salamander заключается в том, что основное изготовление пластикового профиля сосредоточено на территории Германии, в городе Тюркхайм. Это гарантирует высокое качество продукции, а так же долговечность производимых изделий.</p>
@@ -321,9 +295,9 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-center mb-128"><a class="button-green" href="#">Заказать </a></div>
+      <div class="flex flex-center mb-128"><a class="button-green action_popup_first" href="#">Заказать </a></div>
     </div>
-    <div class="section_work">
+    <div class="section_work" id="link_section_work">
       <div class="container">
         <h2 class="text-title">Наши работы</h2>
         <div class="page">
@@ -379,60 +353,60 @@
           <div class="swiper-slide">
             <div class="swiper-container swiper-child" id="slider-work">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_01.png"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_02.png"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_03.png"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_01.png"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_02.png"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_03.png"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></a></div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="swiper-container swiper-child" id="slider-work2">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_01.png"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_02.png"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_03.png"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_01.png"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_02.png"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_03.png"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></a></div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="swiper-container swiper-child" id="slider-work3">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_01.png"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_02.png"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_03.png"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_01.png"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_02.png"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_03.png"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></a></div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="swiper-container swiper-child" id="slider-work4">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_01.png"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_02.png"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_03.png"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_01.png"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_02.png"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_03.png"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></a></div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="swiper-container swiper-child" id="slider-work5">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></div>
-                <div class="swiper-slide"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_01.png"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_02.png"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_03.png"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_01.png"><img class="lazyload" data-src="./img/works/work_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_02.png"><img class="lazyload" data-src="./img/works/work_02.png" alt=""></a></div>
+                <div class="swiper-slide"><a class="imageZoom" href="./img/works/work_03.png"><img class="lazyload" data-src="./img/works/work_03.png" alt=""></a></div>
               </div>
             </div>
           </div>
@@ -481,7 +455,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="link_section_reviews">
       <div class="section_reviews">
         <h2 class="text-title">Отзывы</h2>
         <div class="swiper-nav">
@@ -656,6 +630,15 @@
         </div>
       </div>
     </div>
+    <div class="section_text">
+      <div class="section_text-left">
+        <div class="image"></div>
+      </div>
+      <div class="section_text-right">
+        <h3 class="title">Окна Саламандер<br> от официального производителя</h3>
+        <p class="descr">На протяжении всей истории существования нашего производства окон Саламандер, мы постоянно совершенствуем технологический процесс и парк оборудования. На сегодняшний день на территории более 1500 кв. метров расположилось самое современное производство окон на оборудовании ведущих фирм Германии. Профессионалам оконной индустрии известно, что качество выпускаемой продукции в первую очередь зависит от качества всех последовательных операций. Например, хорошо настроенная усорезная пила с ЧПУ гарантирует точность размера и угла отреза, что влечет за собой правильность геометрии пластикового окна после сварки, которая, в свою очередь, происходит на автомате. Зачистка сварных швов доверена "роботу", у которого никогда не дрогнет рука.</p>
+      </div>
+    </div>
     <div class="section_prod">
       <div class="container">
         <h2 class="text-title">Производители фурнитуры</h2>
@@ -677,11 +660,11 @@
         <h3 class="text-title">Контакты</h3>
         <div class="flex flex-wrap">
           <div class="section_contact-left">
-            <p class="text">Если вам необходима консультация , заполните форму. В течение 24 часов ваше сообщение будет обработано, и мы обязательно свяжемся с вами.</p>
+            <p class="text">Если Вам необходима консультация, заполните форму. В течение 24 часов ваше сообщение будет обработано, и мы обязательно свяжемся с вами.</p>
             <div class="contact-list">
               <div class="contact-list_item"><i class="icon-pin"></i><span>Москва. Аминьевское шоссе, 34, офис 10</span></div>
               <div class="contact-list_item flex-start"><i class="icon-telephone"></i>
-                <div class="flex flex-col"><a href="tel:89015462773">8 901 5462773</a><a href="tel:84959722773">8 495 9722773</a></div>
+                <div class="flex flex-col"><a href="tel:84959722773">8 495 9722773</a><a href="tel:89015462773">8 901 5462773</a></div>
               </div>
               <div class="contact-list_item"><i class="icon-mail"></i>
                 <div class="flex flex-col"><a href="mail:info@salamanderokno.ru">info@salamanderokno.ru</a></div>
@@ -733,6 +716,9 @@
             <li class="last"><a href="#">Контакты</a></li>
           </ul>
         </div>
+        <div class="footer_text">
+          <p class="text">&copy; 1998 - 2021 Сайт официального переработчика лидирующего немецкого производителя оконного и дверного профиля корпорации "SALAMANDER INDUCTRIE PRODUCTE GMBH"</p>
+        </div>
       </div>
     </footer>
     <div class="menu_smart" id="smart_menu">
@@ -760,16 +746,7 @@
               </ul>
             </div>
           </li>
-          <li><a href="#">Почему мы?</a>
-            <div class="menu-panel_smart"><span>Наши профили</span>
-              <ul>
-                <li><a href="#">Salamander Design 3D</a></li>
-                <li><a href="#">Salamander Streamline</a></li>
-                <li><a href="#">Salamander BlueEvolution</a></li>
-                <li><a href="#">Salamander Design 2D</a></li>
-              </ul>
-            </div>
-          </li>
+          <li><a href="#link_section_advantages">Почему мы?</a></li>
           <li><a href="#">Услуги</a>
             <div class="menu-panel_smart">
               <ul>
@@ -780,31 +757,13 @@
               </ul>
             </div>
           </li>
-          <li><a href="#">Наши работы</a>
-            <div class="menu-panel_smart"><span>Наши профили</span>
-              <ul>
-                <li><a href="#">Salamander Design 3D</a></li>
-                <li><a href="#">Salamander Streamline</a></li>
-                <li><a href="#">Salamander BlueEvolution</a></li>
-                <li><a href="#">Salamander Design 2D</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">Отзывы</a>
-            <div class="menu-panel_smart"><span>Наши профили</span>
-              <ul>
-                <li><a href="#">Salamander Design 3D</a></li>
-                <li><a href="#">Salamander Streamline</a></li>
-                <li><a href="#">Salamander BlueEvolution</a></li>
-                <li><a href="#">Salamander Design 2D</a></li>
-              </ul>
-            </div>
-          </li>
+          <li><a href="#link_section_work">Наши работы</a></li>
+          <li><a href="#link_section_reviews">Отзывы</a></li>
           <li><a href="#">О нас</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </div>
-      <div class="menu_smart-bottom"><a href="tel:89015462773">8 901 5462773</a><a href="tel:84959722773">8 495 9722773</a><a href="mail:info@salamanderokno.ru">info@salamanderokno.ru</a><a href="#"><i class="icon-instagram"></i></a></div>
+      <div class="menu_smart-bottom"><a href="tel:84959722773">8 495 9722773</a><a href="tel:89015462773">8 901 5462773</a><a href="mail:info@salamanderokno.ru">info@salamanderokno.ru</a><a href="#"><i class="icon-instagram"></i></a></div>
     </div>
     <div class="popup" id="popup_first">
       <div class="popup_wrap">
@@ -905,6 +864,7 @@
     <script src="./libs/jquery/jquery.min.js"></script>
     <script src="./libs/swiper/swiper-bundle.min.js" defer></script>
     <script src="./libs/lazysizes/lazysizes.min.js" defer></script>
+    <script src="./libs/magnific-popup/jquery.magnific-popup.min.js" defer></script>
     <script src="./js/common.js" defer> </script>
   </body>
 </html>

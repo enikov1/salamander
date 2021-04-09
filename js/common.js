@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+	$('.imageZoom').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		fixedContentPos: true,
+		image: {
+			verticalFit: false
+		}
+	});
    
 	// header menu
 	
@@ -40,14 +49,13 @@ $(document).ready(function () {
 	});
 
 
-	setTimeout(function() {
 
-		let swiper_header = new Swiper('#slider_header', {
+	
+
+
+	let swiper_header = new Swiper('#slider_header', {
 			slidesPerView: 1,
-			// effect: 'fade',
-			// init: false,
 			loop: true,
-			// spaceBetween: 20,
 
 			pagination: {
 				el: '#slider_header .count_slider',
@@ -84,8 +92,6 @@ $(document).ready(function () {
 					},
 				},
 				'768': {
-					// slidesPerView: 1,
-					// spaceBetween: 0,
 
 					pagination: {
 						el: '#slider_header .count_slider',
@@ -121,6 +127,11 @@ $(document).ready(function () {
 			}		
 		});
 
+
+	setTimeout(function() {
+
+		
+
 		const swiper_work = new Swiper('#slider-work', {
 			slidesPerView: 2.5,
 			loop: true,
@@ -128,9 +139,9 @@ $(document).ready(function () {
 			centeredSlidesBounds: true,
 			spaceBetween: 20,
 
-			// autoplay: {
-			// 	delay: 5000,
-			// },
+			autoplay: {
+				delay: 5000,
+			},
 
 			navigation: {
 				nextEl: '.swiper-nav_1 .swiper-button-next',
@@ -154,9 +165,9 @@ $(document).ready(function () {
 			centeredSlidesBounds: true,
 			spaceBetween: 20,
 
-			// autoplay: {
-			// 	delay: 5000,
-			// },
+			autoplay: {
+				delay: 5000,
+			},
 
 			navigation: {
 				nextEl: '.swiper-nav_2 .swiper-button-next',
@@ -518,5 +529,34 @@ $(document).ready(function () {
 	}
 
 	const slider_blog = new Swiper('.slider_blog', slider_blog_set);
+
+	function scrollToElement(element) {
+		element.scrollIntoView(true);
+		let scrollY = window.scrollY;
+		if(scrollY) {
+			window.scroll(0, scrollY - 180);
+		}
+	}
+
+
+	const anchors = document.querySelectorAll('a[href^="#"]')
+
+	for(let anchor of anchors) {
+		anchor.addEventListener("click", function(e) {
+			e.preventDefault();
+			const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+
+			smart_menu.removeClass('active');
+
+			$('body').removeClass('scroll_hidden');
+			// console.log(goto);
+			let element = document.querySelector(goto);
+
+			scrollToElement(element);
+			
+		
+		});
+	}
+
 	
 });
