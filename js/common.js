@@ -576,18 +576,30 @@ $(document).ready(function () {
 		let paretq = $('body');
 		let elemq = $('#link_section_advantages');
 		scrollToElement(elemq, paretq, 220);
+
+		smart_menu.removeClass('active');
+
+		$('body').removeClass('scroll_hidden');
 	});
 
 	$('.scrollTo2').on('click', function() {
 		let paretq = $('body');
 		let elemq = $('#link_section_work');
 		scrollToElement(elemq, paretq, 220);
+
+		smart_menu.removeClass('active');
+
+		$('body').removeClass('scroll_hidden');
 	});
 
 	$('.scrollTo3').on('click', function() {
 		let paretq = $('body');
 		let elemq = $('#link_section_reviews');
 		scrollToElement(elemq, paretq, 220);
+
+		smart_menu.removeClass('active');
+
+		$('body').removeClass('scroll_hidden');
 	});
 
 	$('#form_message1').on('submit', function(e) {
