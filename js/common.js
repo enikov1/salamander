@@ -1,13 +1,5 @@
 $(document).ready(function () {
 
-	$('.imageZoom').magnificPopup({
-		type: 'image',
-		closeOnContentClick: true,
-		fixedContentPos: true,
-		image: {
-			verticalFit: false
-		}
-	});
    
 	// header menu
 	
@@ -15,13 +7,25 @@ $(document).ready(function () {
 		menu_wrap = $('.menu-panel');
 
 	menu_item.on('click', function(e) {
-		if($(this).next(menu_wrap).length) {
 
-			$(this).parent().siblings().removeClass('active');
+		let _this = $(this);
 
-			$(this).parent().toggleClass('active');
-		}	
+		if(_this.next(menu_wrap).length) {
+
+			_this.parent().siblings().removeClass('active');
+
+			_this.parent().toggleClass('active');
+		}
+
+		
 	});
+
+	$(document).mouseup(function (e) {
+			let container = $(".menu-panel, .menu ul li");
+			if (container.has(e.target).length === 0){
+				$('.menu ul li.active').removeClass('active');
+			}
+		});
 
 	let menu_item_smart = $('.menu_smart-nav ul li a'),
 		menu_wrap_smart = $('.menu-panel_smart');
@@ -528,35 +532,115 @@ $(document).ready(function () {
 		}
 	}
 
-	const slider_blog = new Swiper('.slider_blog', slider_blog_set);
+	// const slider_blog = new Swiper('.slider_blog', slider_blog_set);
 
-	function scrollToElement(element) {
-		element.scrollIntoView(true);
-		let scrollY = window.scrollY;
-		if(scrollY) {
-			window.scroll(0, scrollY - 180);
-		}
-	}
+	// function scrollToElement(element) {
+	// 	element.scrollIntoView(true);
+	// 	let scrollY = window.scrollY;
+	// 	if(scrollY) {
+	// 		window.scroll(0, scrollY - 180);
+	// 	}
+	// }
 
 
-	const anchors = document.querySelectorAll('a[href^="#"]')
+	// const anchors = document.querySelectorAll('a[href^="#"]')
 
-	for(let anchor of anchors) {
-		anchor.addEventListener("click", function(e) {
-			e.preventDefault();
-			const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+	// for(let anchor of anchors) {
+	// 	anchor.addEventListener("click", function(e) {
+	// 		e.preventDefault();
+	// 		const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
 
-			smart_menu.removeClass('active');
+	// 		smart_menu.removeClass('active');
 
-			$('body').removeClass('scroll_hidden');
-			// console.log(goto);
-			let element = document.querySelector(goto);
+	// 		$('body').removeClass('scroll_hidden');
+	// 		// console.log(goto);
+	// 		let element = document.querySelector(goto);
 
-			scrollToElement(element);
+	// 		scrollToElement(element);
 			
 		
+	// 	});
+	// }
+
+	function scrollToElement(element, parent, cord = 0) {
+		$(parent)[0].scrollIntoView(true);
+			$(parent).animate({
+			scrollTop: $(parent).scrollTop() + $(element).offset().top - $(parent).offset().top - cord
+			}, {
+			duration: 'slow',
+			easing: 'swing'
 		});
 	}
+
+	$('.scrollTo1').on('click', function() {
+		let paretq = $('body');
+		let elemq = $('#link_section_advantages');
+		scrollToElement(elemq, paretq, 220);
+	});
+
+	$('.scrollTo2').on('click', function() {
+		let paretq = $('body');
+		let elemq = $('#link_section_work');
+		scrollToElement(elemq, paretq, 220);
+	});
+
+	$('.scrollTo3').on('click', function() {
+		let paretq = $('body');
+		let elemq = $('#link_section_reviews');
+		scrollToElement(elemq, paretq, 220);
+	});
+
+	$('#form_message1').on('submit', function(e) {
+		let _this = $(this);
+
+		e.preventDefault();
+
+		_this.empty();
+
+		$('#popup_first').find('.popup_wrap-header').addClass('small');
+		$('#popup_first').find('.popup_wrap-header span').text("Спасибо за Ваше обращение!");
+
+		setTimeout(function() {
+			
+
+			$('#popup_first').find('.popup_wrap-form').append("<p class='text'>Наш менеджер свяжется с Вами в течении 15 минут!</p>");
+		}, 500);
+
+		setTimeout(function() {
+
+			$('.popup').removeClass('active');
+
+			$('body').removeClass('scroll_hidden');
+
+		}, 5000);
+
+	});
+
+	$('#form_message2').on('submit', function(e) {
+		let _this = $(this);
+
+		e.preventDefault();
+
+		_this.empty();
+		$('#popup_last').find('.popup_wrap-header').addClass('small');
+		$('#popup_last').find('.popup_wrap-header span').text("Спасибо за Ваше обращение!");
+
+		setTimeout(function() {
+			
+			
+
+			$('#popup_last').find('.popup_wrap-form').append("<p class='text'>Наш менеджер свяжется с Вами в течении 15 минут!</p>");
+		}, 500);
+
+		setTimeout(function() {
+
+			$('.popup').removeClass('active');
+
+			$('body').removeClass('scroll_hidden');
+
+		}, 5000);
+
+	});
 
 	
 });
