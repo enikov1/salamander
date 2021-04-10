@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Main</title>
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="preload" href="css/main.min.css" as="style" onload="this.rel='stylesheet'">
   </head>
   <body>
     <header class="header">
@@ -92,7 +92,7 @@
           <button class="slider_header_next" type="button"><i class="icon-right-arrow"></i></button>
         </div>
       </div>
-      <div class="header_start-right"><img class="header_slider-1 lazyload" data-src="./img/header-bg.webp" src="#" alt="header-bg"><img class="header_slider-2 lazyload" data-src="./img/header-bg.webp" src="#" alt="header-bg"><img class="header_slider-3 lazyload" data-src="./img/header-bg.webp" src="#" alt="header-bg"></div>
+      <div class="header_start-right"><link rel="preload" as="image" href="./img/header-bg.webp"><img class="header_slider-1 lazyload" data-src="./img/header-bg.webp" src="#" alt="header-bg"><img class="header_slider-2 lazyload" data-src="./img/header-bg.webp" src="#" alt="header-bg"><img class="header_slider-3 lazyload" data-src="./img/header-bg.webp" src="#" alt="header-bg"></div>
       <div class="start_left-control start_left-smart">
         <button class="slider_header_prev2" type="button"><i class="icon-left-arrow"></i></button>
         <div class="count_slider"></div>
