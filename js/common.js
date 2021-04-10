@@ -114,20 +114,20 @@ $(document).ready(function () {
 			var currentSlide = this.realIndex;
 
 			if(currentSlide == 0) {
-				$('.header_slider-1').fadeIn();
+				$('.header_slider-1').show();
 			} else {
-				$('.header_slider-1').fadeOut();
+				$('.header_slider-1').hide();
 			}
 
 			if(currentSlide == 1) {
-				$('.header_slider-2').fadeIn();
+				$('.header_slider-2').show();
 			} else {
-				$('.header_slider-2').fadeOut();
+				$('.header_slider-2').hide();
 			}
 			if(currentSlide == 2) {
-				$('.header_slider-3').fadeIn();
+				$('.header_slider-3').show();
 			} else {
-				$('.header_slider-3').fadeOut();
+				$('.header_slider-3').hide();
 			}		
 		});
 
@@ -531,36 +531,6 @@ $(document).ready(function () {
 			watchOverflow: true
 		}
 	}
-
-	// const slider_blog = new Swiper('.slider_blog', slider_blog_set);
-
-	// function scrollToElement(element) {
-	// 	element.scrollIntoView(true);
-	// 	let scrollY = window.scrollY;
-	// 	if(scrollY) {
-	// 		window.scroll(0, scrollY - 180);
-	// 	}
-	// }
-
-
-	// const anchors = document.querySelectorAll('a[href^="#"]')
-
-	// for(let anchor of anchors) {
-	// 	anchor.addEventListener("click", function(e) {
-	// 		e.preventDefault();
-	// 		const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
-
-	// 		smart_menu.removeClass('active');
-
-	// 		$('body').removeClass('scroll_hidden');
-	// 		// console.log(goto);
-	// 		let element = document.querySelector(goto);
-
-	// 		scrollToElement(element);
-			
-		
-	// 	});
-	// }
 
 	function scrollToElement(element, parent, cord = 0) {
 		$(parent)[0].scrollIntoView(true);

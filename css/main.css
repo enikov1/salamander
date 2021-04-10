@@ -1933,14 +1933,23 @@ body.lb-disable-scrolling {
   }
 }
 
+.header_start-right picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+}
+
+.header_start-right picture:first-child {
+  display: block;
+}
+
 .header_start-right img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all 400ms ease;
-  -o-transition: all 400ms ease;
-  transition: all 400ms ease;
 }
 
 @media (max-width: 899px) {
