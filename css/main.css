@@ -1974,6 +1974,7 @@ body.lb-disable-scrolling {
 
 .item_inset-image {
   background-size: cover;
+  border-radius: 0.625rem;
   width: 100%;
 }
 
@@ -1982,6 +1983,7 @@ body.lb-disable-scrolling {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0.625rem;
 }
 
 .item_inset-text {
@@ -2042,6 +2044,7 @@ body.lb-disable-scrolling {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0.625rem;
 }
 
 .item_outer-text {
