@@ -26,42 +26,7 @@ $(document).ready(function () {
 		
 	// }, 1000);
 
-	let scroll1 = document.querySelector('.scrollTo1');
-	scroll1.addEventListener('click', function(e) {
-		let elemq = $('#link_section_advantages');
-		scrollToElement(elemq, paretq, headerHeight);
-
-		smart_menu.removeClass('active');
-
-		$('body').removeClass('scroll_hidden');
-
-		e.preventDefault();
-	});
-
 	
-	let scroll2 = document.querySelector('.scrollTo2');
-	scroll2.addEventListener('click', function(e) {
-		let elemq = $('#link_section_work');
-		scrollToElement(elemq, paretq, headerHeight);
-
-		smart_menu.removeClass('active');
-
-		$('body').removeClass('scroll_hidden');
-
-		e.preventDefault();
-	});
-
-	let scroll3 = document.querySelector('.scrollTo3');
-	scroll3.addEventListener('click', function(e) {
-		let elemq = $('#link_section_reviews');
-		scrollToElement(elemq, paretq, headerHeight);
-
-		smart_menu.removeClass('active');
-
-		$('body').removeClass('scroll_hidden');
-
-		e.preventDefault();
-	});
 
 	let menu_item = $('.menu ul li a'),
 		menu_wrap = $('.menu-panel');
@@ -113,6 +78,42 @@ $(document).ready(function () {
 	});
 
 	
+	let scroll1 = document.querySelector('.scrollTo1');
+	scroll1.addEventListener('click', function(e) {
+		let elemq = $('#link_section_advantages');
+		scrollToElement(elemq, paretq, headerHeight);
+
+		smart_menu.removeClass('active');
+
+		$('body').removeClass('scroll_hidden');
+
+		e.preventDefault();
+	});
+
+	
+	let scroll2 = document.querySelector('.scrollTo2');
+	scroll2.addEventListener('click', function(e) {
+		let elemq = $('#link_section_work');
+		scrollToElement(elemq, paretq, headerHeight);
+
+		smart_menu.removeClass('active');
+
+		$('body').removeClass('scroll_hidden');
+
+		e.preventDefault();
+	});
+
+	let scroll3 = document.querySelector('.scrollTo3');
+	scroll3.addEventListener('click', function(e) {
+		let elemq = $('#link_section_reviews');
+		scrollToElement(elemq, paretq, headerHeight);
+
+		smart_menu.removeClass('active');
+
+		$('body').removeClass('scroll_hidden');
+
+		e.preventDefault();
+	});
 
 
 	let swiper_header = new Swiper('#slider_header', {
