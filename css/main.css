@@ -3306,7 +3306,7 @@ body.lb-disable-scrolling {
   right: -5.5rem;
   width: 14.3125rem;
   height: 15.3125rem;
-  background: url(../img/salamander.webp) no-repeat;
+  background: url(../img/salamander.png) no-repeat;
   background-size: cover;
 }
 
@@ -3713,7 +3713,7 @@ body.lb-disable-scrolling {
     left: auto;
     width: 19.25rem;
     height: 19.25rem;
-    background: url(../img/main_text-bg_x3.webp) no-repeat;
+    background: url(../img/main_text-bg_x3.png) no-repeat;
   }
 }
 
