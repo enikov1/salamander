@@ -3640,6 +3640,12 @@ body.lb-disable-scrolling {
   }
 }
 
+@media (max-width: 1050px) {
+  .section_text {
+    grid-template-columns: calc((100% - 1050px)/2) 3.3fr 6.6fr calc((100% - 1050px)/2);
+  }
+}
+
 @media (max-width: 899px) {
   .section_text {
     grid-template-columns: calc((100% - 900px)/2) 3.3fr 6.6fr calc((100% - 900px)/2);
@@ -3695,6 +3701,16 @@ body.lb-disable-scrolling {
   background: url(../img/main_text-bg.png) no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 1050px) {
+  .section_text-left .image {
+    width: 100%;
+    height: 100%;
+    top: 7%;
+    background: url(../img/main_text-bg_x2.png) no-repeat;
+    background-size: 20%;
+  }
 }
 
 @media (max-width: 899px) {

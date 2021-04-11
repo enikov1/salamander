@@ -673,6 +673,10 @@ $(document).ready(function () {
 				cord = -650;
 			}
 
+			if($(window).width() >= 768 && $(window).width() <= 1050) {
+				cord = -270;
+			}
+
 			scrollToElement(elemq, paretq, cord);
 		}
 
@@ -689,6 +693,10 @@ $(document).ready(function () {
 				cord2 = -650;
 			}
 
+			if($(window).width() >= 768 && $(window).width() <= 1050) {
+				cord2 = -290;
+			}
+
 			scrollToElement(elemq, paretq, cord2);
 		}
 		
@@ -702,6 +710,10 @@ $(document).ready(function () {
 				cord3 = 50;
 			} else {
 				cord3 = -650;
+			}
+
+			if($(window).width() >= 768 && $(window).width() <= 1050) {
+				cord3 = -350;
 			}
 			scrollToElement(elemq, paretq, cord3);
 		}
