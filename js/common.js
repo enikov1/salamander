@@ -26,7 +26,8 @@ $(document).ready(function () {
 		
 	// }, 1000);
 
-	$('.scrollTo1').on('click', function(e) {
+	let scroll1 = document.querySelector('.scrollTo1');
+	scroll1.onclick = function(e) {
 		let elemq = $('#link_section_advantages');
 		scrollToElement(elemq, paretq, headerHeight);
 
@@ -35,11 +36,22 @@ $(document).ready(function () {
 		$('body').removeClass('scroll_hidden');
 
 		e.preventDefault();
-	});
+	}
+
+	// $('.scrollTo1').on('click', function(e) {
+	// 	let elemq = $('#link_section_advantages');
+	// 	scrollToElement(elemq, paretq, headerHeight);
+
+	// 	smart_menu.removeClass('active');
+
+	// 	$('body').removeClass('scroll_hidden');
+
+	// 	e.preventDefault();
+	// });
 
 	
-
-	$('.scrollTo2').on('click', function(e) {
+	let scroll2 = document.querySelector('.scrollTo2');
+	scroll2.onclick = function(e) {
 		let elemq = $('#link_section_work');
 		scrollToElement(elemq, paretq, headerHeight);
 
@@ -48,9 +60,20 @@ $(document).ready(function () {
 		$('body').removeClass('scroll_hidden');
 
 		e.preventDefault();
-	});
+	}
+	// $('.scrollTo2').on('click', function(e) {
+	// 	let elemq = $('#link_section_work');
+	// 	scrollToElement(elemq, paretq, headerHeight);
 
-	$('.scrollTo3').on('click', function(e) {
+	// 	smart_menu.removeClass('active');
+
+	// 	$('body').removeClass('scroll_hidden');
+
+	// 	e.preventDefault();
+	// });
+
+	let scroll3 = document.querySelector('.scrollTo3');
+	scroll3.onclick = function(e) {
 		let elemq = $('#link_section_reviews');
 		scrollToElement(elemq, paretq, headerHeight);
 
@@ -59,7 +82,18 @@ $(document).ready(function () {
 		$('body').removeClass('scroll_hidden');
 
 		e.preventDefault();
-	});
+	}
+
+	// $('.scrollTo3').on('click', function(e) {
+	// 	let elemq = $('#link_section_reviews');
+	// 	scrollToElement(elemq, paretq, headerHeight);
+
+	// 	smart_menu.removeClass('active');
+
+	// 	$('body').removeClass('scroll_hidden');
+
+	// 	e.preventDefault();
+	// });
 
 	let menu_item = $('.menu ul li a'),
 		menu_wrap = $('.menu-panel');
