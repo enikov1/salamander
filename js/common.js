@@ -64,7 +64,7 @@ $(document).ready(function () {
 		}	
 	});
 
-	let smart_menu = $('#smart_menu');
+	var smart_menu = $('#smart_menu');
 
 	$('#active_smart_menu').on('click', function() {
 		smart_menu.addClass('active');
@@ -78,41 +78,41 @@ $(document).ready(function () {
 	});
 
 	
-	let scroll1 = document.querySelector('.scrollTo1');
-	scroll1.addEventListener('click', function(e) {
+	$('.scrollTo1').on('click', function(e) {
 		let elemq = $('#link_section_advantages');
 		scrollToElement(elemq, paretq, headerHeight);
 
-		smart_menu.removeClass('active');
+		$('.menu_smart').removeClass('active');
 
 		$('body').removeClass('scroll_hidden');
 
-		e.preventDefault();
+		// e.preventDefault();
 	});
 
 	
-	let scroll2 = document.querySelector('.scrollTo2');
-	scroll2.addEventListener('click', function(e) {
+	$('.scrollTo2').on('click', function(e) {
 		let elemq = $('#link_section_work');
-		scrollToElement(elemq, paretq, headerHeight);
 
-		smart_menu.removeClass('active');
+		$('.menu_smart').removeClass('active');
 
 		$('body').removeClass('scroll_hidden');
 
-		e.preventDefault();
+		scrollToElement(elemq, paretq, headerHeight);
+
+		
+
+		// e.preventDefault();
 	});
 
-	let scroll3 = document.querySelector('.scrollTo3');
-	scroll3.addEventListener('click', function(e) {
+	$('.scrollTo3').on('click', function(e) {
 		let elemq = $('#link_section_reviews');
 		scrollToElement(elemq, paretq, headerHeight);
 
-		smart_menu.removeClass('active');
+		$('.menu_smart').removeClass('active');
 
 		$('body').removeClass('scroll_hidden');
 
-		e.preventDefault();
+		// e.preventDefault();
 	});
 
 
