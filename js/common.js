@@ -1,9 +1,6 @@
+document.addEventListener('DOMContentLoaded', function(){
 
-
-
-$(document).ready(function () {
-
-	const headerHeight = document.querySelector('header').offsetHeight + 20;
+   const headerHeight = document.querySelector('header').offsetHeight + 20;
 	const paretq = $('body');
 	console.log(headerHeight);
 	function scrollToElement(element, parent, cord = 0) {
@@ -72,9 +69,7 @@ $(document).ready(function () {
 
 		e.preventDefault();
 	});
-   
-	// header menu
-	
+
 	let menu_item = $('.menu ul li a'),
 		menu_wrap = $('.menu-panel');
 
@@ -123,6 +118,16 @@ $(document).ready(function () {
 
 		$('body').removeClass('scroll_hidden');
 	});
+
+}, false);
+
+$(document).ready(function () {
+
+	
+   
+	// header menu
+	
+	
 
 
 
