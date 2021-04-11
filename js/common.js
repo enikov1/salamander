@@ -663,20 +663,20 @@ $(document).ready(function () {
 	if (/#link_section_advantages/.test(location.href)) {
 			let elemq = $('#link_section_advantages');
 
-			scrollToElement(elemq, paretq, headerHeight);
+			scrollToElement(elemq, paretq, headerHeight - 100);
 		}
 
 
 		if (/#link_section_work/.test(location.href)) {
 			let elemq = $('#link_section_work');
 
-			scrollToElement(elemq, paretq, headerHeight);
+			scrollToElement(elemq, paretq, headerHeight - 100);
 		}
 		
 
 		if (/#link_section_reviews/.test(location.href)) {
 			let elemq = $('#link_section_reviews');
 
-			scrollToElement(elemq, paretq, headerHeight);
+			scrollToElement(elemq, paretq, headerHeight - 100);
 		}
 });
