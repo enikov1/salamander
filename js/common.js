@@ -8,7 +8,6 @@ $(document).ready(function () {
 
 	const headerHeight = document.querySelector('header').offsetHeight + 20;
 	const paretq = $('body');
-	console.log(headerHeight);
 	function scrollToElement(element, parent, cord = 0) {
 		$(parent)[0].scrollIntoView(true);
 			$(parent).animate({
@@ -189,7 +188,7 @@ $(document).ready(function () {
 		});
 
 
-	// setTimeout(function() {
+	setTimeout(function() {
 
 		
 
@@ -390,7 +389,7 @@ $(document).ready(function () {
 			
 		});
 		
-	// }, 2000);
+	}, 2000);
 
 	
 
@@ -441,7 +440,7 @@ $(document).ready(function () {
 	}
 
 
-	// setTimeout(function() {
+	setTimeout(function() {
 		if($(window).width() < 768) {
 			advSliderInit();
 			section3SliderInit();
@@ -461,7 +460,7 @@ $(document).ready(function () {
 		});
 
 		
-	// }, 2000);
+	}, 2000);
 
 	const swiper_work_inner = new Swiper('#slider-word_page1', {
 			slidesPerView: 1,
