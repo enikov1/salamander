@@ -188,7 +188,7 @@ $(document).ready(function () {
 		});
 
 
-	// setTimeout(function() {
+	setTimeout(function() {
 
 		
 
@@ -389,7 +389,7 @@ $(document).ready(function () {
 			
 		});
 		
-	// }, 2000);
+	}, 500);
 
 	
 
@@ -440,7 +440,7 @@ $(document).ready(function () {
 	}
 
 
-	// setTimeout(function() {
+	setTimeout(function() {
 		if($(window).width() < 768) {
 			advSliderInit();
 			section3SliderInit();
@@ -460,7 +460,7 @@ $(document).ready(function () {
 		});
 
 		
-	// }, 2000);
+	}, 500);
 
 	const swiper_work_inner = new Swiper('#slider-word_page1', {
 			slidesPerView: 1,
