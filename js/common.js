@@ -132,7 +132,7 @@ $(document).ready(function () {
 		});
 
 
-	setTimeout(function() {
+	// setTimeout(function() {
 
 		
 
@@ -333,7 +333,7 @@ $(document).ready(function () {
 			
 		});
 		
-	}, 2000);
+	// }, 2000);
 
 	
 
@@ -384,7 +384,7 @@ $(document).ready(function () {
 	}
 
 
-	setTimeout(function() {
+	// setTimeout(function() {
 		if($(window).width() < 768) {
 			advSliderInit();
 			section3SliderInit();
@@ -404,7 +404,7 @@ $(document).ready(function () {
 		});
 
 		
-	}, 2000);
+	// }, 2000);
 
 	const swiper_work_inner = new Swiper('#slider-word_page1', {
 			slidesPerView: 1,
@@ -542,10 +542,59 @@ $(document).ready(function () {
 		});
 	}
 
+	setTimeout(function() {
+		if (/#link_section_advantages/.test(location.href)) {
+			let paretq = $('body');
+			let elemq = $('#link_section_advantages');
+
+			if($(window).width() < 768) {
+				scrollToElement(elemq, paretq, 115);
+			} else {
+				scrollToElement(elemq, paretq, 220);
+			}
+		}
+
+
+		if (/#link_section_work/.test(location.href)) {
+			let paretq = $('body');
+			let elemq = $('#link_section_work');
+
+			if($(window).width() <= 768 && $(window).width() > 540) {
+				console.log(1);
+				scrollToElement(elemq, paretq, 150);
+			} else if($(window).width() <= 540) {
+				scrollToElement(elemq, paretq, 90);
+				console.log(2);
+			} else {
+				scrollToElement(elemq, paretq, 10);
+				console.log(3);
+			}
+		}
+
+		if (/#link_section_reviews/.test(location.href)) {
+			let paretq = $('body');
+			let elemq = $('#link_section_reviews');
+			
+			if($(window).width() <= 768 && $(window).width() > 540) {
+				scrollToElement(elemq, paretq, 135);
+			} else if($(window).width() <= 540) {
+				scrollToElement(elemq, paretq, 90);
+			} else {
+				scrollToElement(elemq, paretq, 220);
+			}
+		}
+	}, 1000);
+
 	$('.scrollTo1').on('click', function() {
 		let paretq = $('body');
 		let elemq = $('#link_section_advantages');
-		scrollToElement(elemq, paretq, 220);
+		
+
+		if($(window).width() < 768) {
+			scrollToElement(elemq, paretq, 115);
+		} else {
+			scrollToElement(elemq, paretq, 220);
+		}
 
 		smart_menu.removeClass('active');
 
@@ -555,7 +604,14 @@ $(document).ready(function () {
 	$('.scrollTo2').on('click', function() {
 		let paretq = $('body');
 		let elemq = $('#link_section_work');
-		scrollToElement(elemq, paretq, 220);
+
+		if($(window).width() <= 768 && $(window).width() > 540) {
+			scrollToElement(elemq, paretq, 150);
+		} else if($(window).width() <= 540) {
+			scrollToElement(elemq, paretq, 90);
+		} else {
+			scrollToElement(elemq, paretq, 220);
+		}
 
 		smart_menu.removeClass('active');
 
@@ -565,7 +621,14 @@ $(document).ready(function () {
 	$('.scrollTo3').on('click', function() {
 		let paretq = $('body');
 		let elemq = $('#link_section_reviews');
-		scrollToElement(elemq, paretq, 220);
+		
+		if($(window).width() <= 768 && $(window).width() > 540) {
+			scrollToElement(elemq, paretq, 135);
+		} else if($(window).width() <= 540) {
+			scrollToElement(elemq, paretq, 90);
+		} else {
+			scrollToElement(elemq, paretq, 220);
+		}
 
 		smart_menu.removeClass('active');
 
@@ -622,6 +685,21 @@ $(document).ready(function () {
 
 		}, 5000);
 
+	});
+
+	$('#form_contact').on('submit', function(e) {
+		let _this = $(this);
+		e.preventDefault();
+
+		_this.find('.field-control').addClass('success');
+
+		_this.find('.field-control').append('<p>Сообщение успешно отправлено!</p>');
+	
+
+		setTimeout(function() {
+			_this.find('.field-control p').remove();
+			_this.find('.field-control').removeClass('success');
+		}, 5000);
 	});
 
 	
