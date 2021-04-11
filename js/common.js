@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function () {
 
 	const headerHeight = document.querySelector('header').offsetHeight + 20;
