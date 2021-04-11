@@ -1,5 +1,5 @@
+$(document).ready(function () {
 
-$(window).load(function() {
 	const headerHeight = document.querySelector('header').offsetHeight + 20;
 	const paretq = $('body');
 
@@ -34,11 +34,6 @@ $(window).load(function() {
 			let elemq = $('#link_section_reviews');
 			scrollToElement(elemq, paretq, headerHeight);
 		}
-});
-
-$(document).ready(function () {
-
-	
 
 	$('.scrollTo1').on('click', function(e) {
 		let elemq = $('#link_section_advantages');
