@@ -662,21 +662,31 @@ $(document).ready(function () {
 
 	if (/#link_section_advantages/.test(location.href)) {
 			let elemq = $('#link_section_advantages');
-
-			scrollToElement(elemq, paretq, headerHeight - 100);
+			let cord = 0;
+			if($(window).width() > 1050) {
+				cord = 100;
+			}
+			scrollToElement(elemq, paretq, headerHeight - cord);
 		}
 
 
 		if (/#link_section_work/.test(location.href)) {
 			let elemq = $('#link_section_work');
-
-			scrollToElement(elemq, paretq, headerHeight - 100);
+			let cord = 0;
+			if($(window).width() > 1050) {
+				cord = 100;
+			}
+			scrollToElement(elemq, paretq, headerHeight - cord);
 		}
 		
 
 		if (/#link_section_reviews/.test(location.href)) {
 			let elemq = $('#link_section_reviews');
+			let cord = 0;
+			if($(window).width() > 1050) {
+				cord = 100;
+			}
 
-			scrollToElement(elemq, paretq, headerHeight - 100);
+			scrollToElement(elemq, paretq, headerHeight - cord);
 		}
 });
