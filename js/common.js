@@ -1,6 +1,12 @@
-document.addEventListener('DOMContentLoaded', function(){
+$(document).ready(function () {
 
-   const headerHeight = document.querySelector('header').offsetHeight + 20;
+	
+   
+	// header menu
+	
+	
+
+	const headerHeight = document.querySelector('header').offsetHeight + 20;
 	const paretq = $('body');
 	console.log(headerHeight);
 	function scrollToElement(element, parent, cord = 0) {
@@ -18,22 +24,8 @@ document.addEventListener('DOMContentLoaded', function(){
 	// }
 
 	// setTimeout(function() {
-		if (/#link_section_advantages/.test(location.href)) {
-			let elemq = $('#link_section_advantages');
-			scrollToElement(elemq, paretq, headerHeight);
-		}
-
-
-		if (/#link_section_work/.test(location.href)) {
-			let elemq = $('#link_section_work');
-			scrollToElement(elemq, paretq, headerHeight);
-		}
 		
-
-		if (/#link_section_reviews/.test(location.href)) {
-			let elemq = $('#link_section_reviews');
-			scrollToElement(elemq, paretq, headerHeight);
-		}
+	// }, 1000);
 
 	$('.scrollTo1').on('click', function(e) {
 		let elemq = $('#link_section_advantages');
@@ -118,18 +110,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
 		$('body').removeClass('scroll_hidden');
 	});
-
-}, false);
-
-$(document).ready(function () {
-
-	
-   
-	// header menu
-	
-	
-
-
 
 	
 
@@ -679,4 +659,50 @@ $(document).ready(function () {
 			_this.find('.field-control').removeClass('success');
 		}, 5000);
 	});
+
+
+	if (/#link_section_advantages/.test(location.href)) {
+			let elemq = $('#link_section_advantages');
+
+			let cord = 0;
+			if($(window).width() <= 540) {
+				cord = -50;
+			} else if($(window).width() <= 768) {
+				cord = 120;
+			} else {
+				cord = -650;
+			}
+
+			scrollToElement(elemq, paretq, cord);
+		}
+
+
+		if (/#link_section_work/.test(location.href)) {
+			let elemq = $('#link_section_work');
+
+			let cord2 = 0;
+			if($(window).width() <= 540) {
+				cord2 = -250;
+			} else if($(window).width() <= 768) {
+				cord2 = -20;
+			} else {
+				cord2 = -650;
+			}
+
+			scrollToElement(elemq, paretq, cord2);
+		}
+		
+
+		if (/#link_section_reviews/.test(location.href)) {
+			let elemq = $('#link_section_reviews');
+			let cord3 = 0;
+			if($(window).width() <= 540) {
+				cord3 = -240;
+			} else if($(window).width() <= 768) {
+				cord3 = 50;
+			} else {
+				cord3 = -650;
+			}
+			scrollToElement(elemq, paretq, cord3);
+		}
 });
