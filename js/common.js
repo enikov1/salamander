@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 	const headerHeight = document.querySelector('header').offsetHeight + 20;
 	const paretq = $('body');
-
+	console.log(headerHeight);
 	function scrollToElement(element, parent, cord = 0) {
 		$(parent)[0].scrollIntoView(true);
 			$(parent).animate({
