@@ -697,7 +697,7 @@ $(document).ready(function () {
 			let elemq = $('#link_section_reviews');
 			let cord3 = 0;
 			if($(window).width() <= 540) {
-				cord3 = -240;
+				cord3 = -140;
 			} else if($(window).width() <= 768) {
 				cord3 = 50;
 			} else {
