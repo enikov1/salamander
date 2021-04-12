@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-	
+	document.ontouchmove = function(event){
+    	event.preventDefault();
+	}
    
 	// header menu
 	
