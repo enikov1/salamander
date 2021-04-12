@@ -5390,15 +5390,12 @@ body.lb-disable-scrolling {
   border: 0;
 }
 
-body {
-  -ms-scroll-chaining: none;
-      overscroll-behavior: none;
-}
-
 html, body {
   position: relative;
   overflow-x: hidden;
   height: 100%;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
 }
 
 html {
