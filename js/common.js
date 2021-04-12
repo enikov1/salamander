@@ -1,23 +1,35 @@
 $(document).ready(function () {
 
-	document.ontouchmove = function(event){
-    	event.preventDefault();
+	function preventDefault(e){
+		e.preventDefault();
 	}
-   
+	function disableScroll(){
+		document.body.addEventListener('touchmove', preventDefault, { passive: false });
+	}
+	function enableScroll(){
+		document.body.removeEventListener('touchmove', preventDefault, { passive: false });
+	}
 	// header menu
-	
 	
 
 	const headerHeight = document.querySelector('header').offsetHeight + 20;
 	const paretq = $('body');
 	function scrollToElement(element, parent, cord = 0) {
 		$(parent)[0].scrollIntoView(true);
-			$(parent).animate({
-			scrollTop: $(parent).scrollTop() + $(element).offset().top - $(parent).offset().top - cord
-			}, {
-			duration: 'slow',
-			easing: 'swing'
-		});
+			disableScroll();
+
+			$.when(
+				$(parent).animate({
+					scrollTop: $(parent).scrollTop() + $(element).offset().top - $(parent).offset().top - cord
+					}, {
+					duration: 'slow',
+					easing: 'swing'
+				})
+			).then(function() {
+				enableScroll();
+			});
+
+			
 	}
 
 	// function gotoWork(elem) {
@@ -88,7 +100,7 @@ $(document).ready(function () {
 
 		$('body').removeClass('scroll_hidden');
 
-		// e.preventDefault();
+		
 	});
 
 	
