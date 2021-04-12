@@ -1727,6 +1727,7 @@ body.lb-disable-scrolling {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 
 .header_start {
