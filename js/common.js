@@ -56,7 +56,7 @@ $(document).ready(function () {
 		$('body').removeClass('scroll_hidden');
 	});
 
-	$("body").on('click', '[href*="#"]', function(e) {
+	$('.scrollTo').on('click', function(e) {
 
         
             $('html,body').stop().animate({
