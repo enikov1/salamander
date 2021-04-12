@@ -1,9 +1,11 @@
 $(document).ready(function () {
 
 	// header menu
+	let headerHeight = document.querySelector('header').offsetHeight + 30;
+	$(window).resize(function() {
+		headerHeight = document.querySelector('header').offsetHeight + 30;
+	});
 	
-
-	const headerHeight = document.querySelector('header').offsetHeight + 30;
 	const paretq = $('body');
 	// function scrollToElement(element, parent, cord = 0) {
 	// 	$(parent)[0].scrollIntoView(true);
