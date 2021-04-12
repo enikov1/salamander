@@ -1531,12 +1531,23 @@ body.lb-disable-scrolling {
   }
 }
 
+.header_wrap {
+  position: relative;
+  height: 8.5625rem;
+}
+
+@media (max-width: 767px) {
+  .header_wrap {
+    height: 3.4375rem;
+  }
+}
+
 .menu_smart {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 3.4375rem;
   background-color: white;
   display: -webkit-box;
   display: -webkit-flex;

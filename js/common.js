@@ -5,7 +5,7 @@ $(document).ready(function () {
 	$(window).resize(function() {
 		headerHeight = document.querySelector('header').offsetHeight + 30;
 
-		$('body').css('padding-top', headerHeight-30 + 'px');
+		// $('body').css('padding-top', headerHeight-30 + 'px');
 	});
 	
 	const paretq = $('body');
@@ -123,7 +123,7 @@ $(document).ready(function () {
 
 	// 	// e.preventDefault();
 	// });
-	$('body').css('padding-top', headerHeight-30 + 'px');
+	// $('body').css('padding-top', headerHeight-30 + 'px');
 
 	// var scroll = $(window).scrollTop();
     //         if (scroll > 0) {
