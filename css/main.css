@@ -902,7 +902,7 @@ body.lb-disable-scrolling {
 }
 
 .lightboxOverlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -913,7 +913,7 @@ body.lb-disable-scrolling {
 }
 
 .lightbox {
-  position: fixed;
+  position: absolute;
   left: 0;
   width: 100%;
   z-index: 10000;
@@ -1109,7 +1109,6 @@ body.lb-disable-scrolling {
   top: 0;
   width: 100%;
   z-index: 99;
-  height: 8.5625rem;
 }
 
 @media (max-width: 767px) {
@@ -1534,6 +1533,12 @@ body.lb-disable-scrolling {
 .header_wrap {
   position: relative;
   height: 8.5625rem;
+}
+
+@media (min-width: 1680px) {
+  .header_wrap {
+    height: 7.5rem;
+  }
 }
 
 @media (max-width: 767px) {
