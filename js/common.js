@@ -25,7 +25,7 @@ $(document).ready(function () {
 	});
 
 	$(document).mouseup(function (e) {
-			let container = $(".menu-panel, .menu ul li");
+			let container = $(".menu-panel, .menu ul li.active");
 			if (container.has(e.target).length === 0){
 				$('.menu ul li.active').removeClass('active');
 			}
